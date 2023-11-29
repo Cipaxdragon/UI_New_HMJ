@@ -69,3 +69,12 @@ section{
   }
 
 
+/* Tambahkan gaya untuk efek fade */
+.carousel-item {
+    transition: opacity 1s ease-in-out;
+}
+
+/* Atur opasitas pada item yang tidak aktif */
+.carousel-item:not(.active) {
+    opacity: 0.5;
+}
