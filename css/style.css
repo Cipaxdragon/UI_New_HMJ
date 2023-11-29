@@ -1,0 +1,68 @@
+
+::-webkit-scrollbar {
+    display: fixed;
+    background-color: white;
+    width: 7px;
+ }
+ ::-webkit-scrollbar-thumb {
+    background: rgb(196, 196, 196);
+    border-radius: 50px;
+ }
+ ::-webkit-scrollbar-thumb:hover {
+    background: #1245ba;
+ }
+
+#header-hero-1{
+    margin-bottom: 200px;
+}
+body{
+    padding: 0px;
+}
+#header-hero{
+    width: 100%;
+    background-repeat: no-repeat;
+    /* background-image: url('https://source.unsplash.com/1600x7?white'); */
+    background-position: center;
+}
+
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+section{
+    min-height: 600px;
+}
+#header-hero-1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 793px;
+    background-image: url('https://source.unsplash.com/1600x764?white');
+}
+
+.kon{
+    border-color: red solid 1px;
+}
+
+.nav-item-animasi{
+    transition: 0.3s;
+}
+
+.nav-item-animasi:hover{
+    color: #0d2e7b;
+    transform: scale(1.1);
+}
+.nav-link{
+    color: inherit;
+}
+
+/* Tambahkan gaya untuk kelas "fix-to-top" */
+.navbar.fix-to-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sesuaikan gaya lainnya sesuai kebutuhan */
+  }
+
+
