@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Animated Page</title>
+</head>
+<body>
+
+  
+    <div class="animated-element" id="animatedElement">
+        <!-- Konten Anda di sini -->
+        <h1>Selamat Datang!</h1>
+    </div>    
+    <div class="animated-element" id="animatedElement">
+        <!-- Konten Anda di sini -->
+        <h1>Selamat Datang!</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h1 class="animated-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, distinctio sed praesentium dolor ex recusandae dignissimos consectetur officiis sit nisi commodi iste possimus vitae nam totam optio obcaecati aliquid. Dolorum.</h1>
+    <script src="script.js"></script>
+</body>
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+    var animatedElements = document.querySelectorAll('.animated-element');
+
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function handleScroll() {
+        animatedElements.forEach(function(el) {
+            if (isElementInViewport(el)) {
+                el.classList.add('animated');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Initial check
+    handleScroll();
+});
+
+
+</script>
+</html>
