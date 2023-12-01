@@ -108,3 +108,11 @@ section{
     .gallery-item img:hover {
       transform: scale(1.1);
     }
+
+
+.hover-scale{
+    transition: transform 0.3s ease-in-out;
+}
+.hover-scale:hover{
+    transform: scale(1.1);
+}
